@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/index-dist.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="header__aImg">
+            <picture>
+                <source srcset="/assets/images/thumbnaillogook-mobile.webp" media="(max-width:480px)" class="header__source">
+                <img src="./assets/images/thumbnaillogook.webp" alt="logo de la empresa" class="header__sourceImg">
+            </picture>
+        </a>
+        <nav class="header__navIcons">
+            <ul class="header__ulIcons">
+                <li class="header__liIcons">
+                    <a href="#" class="header_aIcons">
+                        <img src="./assets/images/perfil-del-usuario.webp" alt="Perfil" class="header__imgIcons">
+                    </a>
+                </li>
+                <li class="header__liIcons">
+                    <a href="#" class="header__aIcons">
+                        <img src="./assets/images/hoja.png" alt="Rutina" class="header__imgIcons">
+                    </a>
+                </li>
+                <li class="header__liIcons">
+                    <a href="#" class="header__aIcons">
+                        <img src="./assets/images/corazon-favorito.webp" alt="favoritos" class="header__imgIcons">
+                    </a>
+                </li>
+                <li class="header__liIcons">
+                    <a href="#" class="header__aIcons">
+                        <img src="./assets/images/carrito-de-compras.webp" alt="carrito" class="header__imgIcons">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="header__navNombreImgIcons">
+            <ul class="header__ulNombreImgIcons">
+                <li class="header__liNombreImgIcons">
+                    <a href="#" class="header__aNombreImgIcons">
+                        Mi Perfil
+                    </a>
+                </li>
+                <li class="header__liNombreImgIcons">
+                    <a href="#" class="header__aNombreImgIcons">
+                        Mi Rutina
+                    </a>
+                </li>
+                <li class="header__liNombreImgIcons">
+                    <a href="#" class="header__aNombreImgIcons">
+                        Favoritos
+                    </a>
+                </li>
+                <li class="header__liNombreImgIcons">
+                    <a href="#" class="header__aNombreImgIcons">
+                        Carrito
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="header__navAyuda">
+            <ul class="header__ulAyuda">
+                <li class="header__liAyuda">
+                    <a href="#" class="header__aAyuda">
+                        ¿Necesitas Ayuda?
+                    </a>
+                </li>
+                <li class="header__liAyuda">
+                    <a href="#" class="header__aAyuda">
+                        ¿Por qué comprar en linea?
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="header__divPromociones">
+        <a href="#" class="header__aPromociones">Descuentos del 20%</a>
+    </div>
+    <main>
+        <nav class="main__nav">
+            <ul class="main__ul">
+                <li class="main__li">
+                    <a href="#" class="main__aEnlaces">¡NUEVOS!</a>
+                </li>
+                <li class="main__li">
+                    <a href="#" class="main__aEnlaces">ENLACE2</a>
+                </li>
+                <li class="main__li">
+                    <a href="./views/productos.html" class="main__aEnlaces">PRODUCTOS</a>
+                </li>
+                <li class="main__li">
+                    <a href="#" class="main__aEnlaces">OFERTAS</a>
+                </li>
+            </ul>
+
+            <div class="main__divBuscador">
+                <input type="text" placeholder="Buscar" required class="main__buscador">
+            </div>
+            <div class="main__divImgBuscador">
+                <img src="./assets/images/busqueda.png" alt="lupa de busqueda" class="main__img">
+            </div>
+        </nav>
+        <section id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/images/TONICO_REAFIRMANTE.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/SERUM_ANTI_OXIDANTE.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/SERUM_ANTI_EDAD.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </section>
+        <section class="main__sectionBotones">
+            <div class="main__divButtonsMasVendidos">
+                <a href="#LoMasVendido" class="main__aButtonVendidos">Los mas vendidos</a>
+            </div>
+            <div class="main__divButtonsNotificaciones">
+                <a href="#" class="main__aButtonNotificaciones">Notificaciones</a>
+            </div>
+        </section>
+        <!-- <section class="main__sectionProductos" id="LoMasVendido">
+            <div class="main__divSectionProductos">
+                <div class="main__divSectionProductosImg">
+                    <img src="./assets/images/Espumasinfondo.webp" alt="espuma facial" class="main__imgSectionProductos">
+                </div>
+                <div class="main__divSectionProductosTxt">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti sapiente quis facere nemo nisi quaerat odit, voluptates suscipit alias ea eius quasi modi quae aliquid necessitatibus distinctio nihil facilis a repudiandae ex fugit est adipisci eveniet! Consequatur</p>
+                </div>
+                <div class="main__divSectionProductosBtn">
+                    <a href="#" class="main__aSectionProductosBtn">AGREGAR AL CARRITO</a>
+                </div>
+            </div>
+            <div class="main__divSectionProductos">
+                <div class="main__divSectionProductosImg">
+                    <img src="./assets/images/Espumasinfondo.webp" alt="espuma facial" class="main__imgSectionProductos">
+                </div>
+                <div class="main__divSectionProductosTxt">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti sapiente quis facere nemo nisi quaerat odit, voluptates suscipit alias ea eius quasi modi quae aliquid necessitatibus distinctio nihil facilis a repudiandae ex fugit est adipisci eveniet! Consequatur</p>
+                </div>
+                <div class="main__divSectionProductosBtn">
+                    <a href="#" class="main__aSectionProductosBtn">AGREGAR AL CARRITO</a>
+                </div>
+            </div>
+            <div class="main__divSectionProductos">
+                <div class="main__divSectionProductosImg">
+                    <img src="./assets/images/Espumasinfondo.webp" alt="espuma facial" class="main__imgSectionProductos">
+                </div>
+                <div class="main__divSectionProductosTxt">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti sapiente quis facere nemo nisi quaerat odit, voluptates suscipit alias ea eius quasi modi quae aliquid necessitatibus distinctio nihil facilis a repudiandae ex fugit est adipisci eveniet! Consequatur</p>
+                </div>
+                <div class="main__divSectionProductosBtn">
+                    <a href="#" class="main__aSectionProductosBtn">AGREGAR AL CARRITO</a>
+                </div>
+            </div>
+            <div class="main__divSectionProductos">
+                <div class="main__divSectionProductosImg">
+                    <img src="./assets/images/Espumasinfondo.webp" alt="espuma facial" class="main__imgSectionProductos">
+                </div>
+                <div class="main__divSectionProductosTxt">
+                    <p class="h6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti sapiente quis facere nemo nisi quaerat odit, voluptates suscipit alias ea eius quasi modi quae aliquid necessitatibus distinctio nihil facilis a repudiandae ex fugit est adipisci eveniet! Consequatur</p>
+                </div>
+                <div class="main__divSectionProductosBtn">
+                    <a href="#" class="main__aSectionProductosBtn">AGREGAR AL CARRITO</a>
+                </div>
+            </div>
+        </section> -->
+        <!-- <div class="card-group">
+            <div class="card">
+              <img src="./assets/images/BLOQUEADOR_SOLAR_FACIAL.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./assets/images/CREMA_FACIAL_HUMECTANTE.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./assets/images/TONICO_REAFIRMANTE.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div> -->
+
+         <!-- <section class="row">
+            <div class="card estilo-b">
+                <div class="img-container">
+                    <img src="./assets/images/natural.jpg" alt="producto">
+                    <span class="price">Promoción por $150</span>
+                    <span class="favorite">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                        preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                        Created by potrace 1.16, written by Peter Selinger 2001-2019
+                        </metadata>
+                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                        fill="#000000" stroke="none">
+                        <path d="M1325 4843 c-355 -46 -657 -195 -902 -444 -182 -186 -308 -407 -376
+                        -660 -39 -146 -50 -257 -44 -441 8 -235 44 -384 143 -593 53 -113 106 -195
+                        199 -310 92 -113 2070 -2077 2116 -2100 19 -10 63 -20 100 -23 112 -8 123 1
+                        426 310 147 150 601 608 1008 1018 408 410 766 777 797 815 224 282 328 578
+                        328 935 0 222 -31 383 -111 579 -71 173 -175 331 -312 470 -212 216 -472 359
+                        -765 421 -127 27 -360 37 -484 21 -326 -44 -622 -181 -840 -390 l-48 -45 -47
+                        45 c-268 256 -644 401 -1028 397 -71 0 -143 -3 -160 -5z m365 -178 c327 -53
+                        576 -191 813 -453 l57 -63 62 68 c240 261 480 394 808 448 683 110 1348 -353
+                        1497 -1045 14 -66 18 -128 18 -275 -1 -165 -4 -202 -24 -285 -28 -113 -58
+                        -195 -107 -293 -93 -185 -98 -192 -1029 -1132 -484 -490 -947 -959 -1030
+                        -1042 -124 -127 -154 -153 -178 -153 -24 0 -78 48 -345 309 -599 585 -1768
+                        1765 -1814 1831 -102 146 -183 329 -224 505 -27 113 -27 414 -1 535 149 692
+                        812 1154 1497 1045z"/>
+                        </g>
+                        </svg>
+                    </span>
+                </div>
+                <p>Producto a vender</p>
+                <a href="#">Añadir</a>
+            </div>
+            <div class="card estilo-b">
+                <div class="img-container">
+                    <img src="./assets/images/natural.jpg" alt="producto">
+                    <span class="price">Promoción: $150</span>
+                    <span class="favorite">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                        preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                        Created by potrace 1.16, written by Peter Selinger 2001-2019
+                        </metadata>
+                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                        fill="#000000" stroke="none">
+                        <path d="M1325 4843 c-355 -46 -657 -195 -902 -444 -182 -186 -308 -407 -376
+                        -660 -39 -146 -50 -257 -44 -441 8 -235 44 -384 143 -593 53 -113 106 -195
+                        199 -310 92 -113 2070 -2077 2116 -2100 19 -10 63 -20 100 -23 112 -8 123 1
+                        426 310 147 150 601 608 1008 1018 408 410 766 777 797 815 224 282 328 578
+                        328 935 0 222 -31 383 -111 579 -71 173 -175 331 -312 470 -212 216 -472 359
+                        -765 421 -127 27 -360 37 -484 21 -326 -44 -622 -181 -840 -390 l-48 -45 -47
+                        45 c-268 256 -644 401 -1028 397 -71 0 -143 -3 -160 -5z m365 -178 c327 -53
+                        576 -191 813 -453 l57 -63 62 68 c240 261 480 394 808 448 683 110 1348 -353
+                        1497 -1045 14 -66 18 -128 18 -275 -1 -165 -4 -202 -24 -285 -28 -113 -58
+                        -195 -107 -293 -93 -185 -98 -192 -1029 -1132 -484 -490 -947 -959 -1030
+                        -1042 -124 -127 -154 -153 -178 -153 -24 0 -78 48 -345 309 -599 585 -1768
+                        1765 -1814 1831 -102 146 -183 329 -224 505 -27 113 -27 414 -1 535 149 692
+                        812 1154 1497 1045z"/>
+                        </g>
+                        </svg>
+                    </span>
+                </div>
+                <p>Producto a vender</p>
+                <a href="#">Añadir</a>
+            </div>
+         </section>
+
+         <section class="row">
+            <div class="card estilo-b">
+                <div class="img-container">
+                    <img src="./assets/images/natural.jpg" alt="producto">
+                    <span class="price">Promoción por $150</span>
+                    <span class="favorite">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                        preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                        Created by potrace 1.16, written by Peter Selinger 2001-2019
+                        </metadata>
+                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                        fill="#000000" stroke="none">
+                        <path d="M1325 4843 c-355 -46 -657 -195 -902 -444 -182 -186 -308 -407 -376
+                        -660 -39 -146 -50 -257 -44 -441 8 -235 44 -384 143 -593 53 -113 106 -195
+                        199 -310 92 -113 2070 -2077 2116 -2100 19 -10 63 -20 100 -23 112 -8 123 1
+                        426 310 147 150 601 608 1008 1018 408 410 766 777 797 815 224 282 328 578
+                        328 935 0 222 -31 383 -111 579 -71 173 -175 331 -312 470 -212 216 -472 359
+                        -765 421 -127 27 -360 37 -484 21 -326 -44 -622 -181 -840 -390 l-48 -45 -47
+                        45 c-268 256 -644 401 -1028 397 -71 0 -143 -3 -160 -5z m365 -178 c327 -53
+                        576 -191 813 -453 l57 -63 62 68 c240 261 480 394 808 448 683 110 1348 -353
+                        1497 -1045 14 -66 18 -128 18 -275 -1 -165 -4 -202 -24 -285 -28 -113 -58
+                        -195 -107 -293 -93 -185 -98 -192 -1029 -1132 -484 -490 -947 -959 -1030
+                        -1042 -124 -127 -154 -153 -178 -153 -24 0 -78 48 -345 309 -599 585 -1768
+                        1765 -1814 1831 -102 146 -183 329 -224 505 -27 113 -27 414 -1 535 149 692
+                        812 1154 1497 1045z"/>
+                        </g>
+                        </svg>
+                    </span>
+                </div>
+                <p>Producto a vender</p>
+                <a href="#">Añadir</a>
+            </div>
+            <div class="card estilo-b">
+                <div class="img-container">
+                    <img src="./assets/images/natural.jpg" alt="producto">
+                    <span class="price">Promoción: $150</span>
+                    <span class="favorite">
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                        width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                        preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                        Created by potrace 1.16, written by Peter Selinger 2001-2019
+                        </metadata>
+                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                        fill="#000000" stroke="none">
+                        <path d="M1325 4843 c-355 -46 -657 -195 -902 -444 -182 -186 -308 -407 -376
+                        -660 -39 -146 -50 -257 -44 -441 8 -235 44 -384 143 -593 53 -113 106 -195
+                        199 -310 92 -113 2070 -2077 2116 -2100 19 -10 63 -20 100 -23 112 -8 123 1
+                        426 310 147 150 601 608 1008 1018 408 410 766 777 797 815 224 282 328 578
+                        328 935 0 222 -31 383 -111 579 -71 173 -175 331 -312 470 -212 216 -472 359
+                        -765 421 -127 27 -360 37 -484 21 -326 -44 -622 -181 -840 -390 l-48 -45 -47
+                        45 c-268 256 -644 401 -1028 397 -71 0 -143 -3 -160 -5z m365 -178 c327 -53
+                        576 -191 813 -453 l57 -63 62 68 c240 261 480 394 808 448 683 110 1348 -353
+                        1497 -1045 14 -66 18 -128 18 -275 -1 -165 -4 -202 -24 -285 -28 -113 -58
+                        -195 -107 -293 -93 -185 -98 -192 -1029 -1132 -484 -490 -947 -959 -1030
+                        -1042 -124 -127 -154 -153 -178 -153 -24 0 -78 48 -345 309 -599 585 -1768
+                        1765 -1814 1831 -102 146 -183 329 -224 505 -27 113 -27 414 -1 535 149 692
+                        812 1154 1497 1045z"/>
+                        </g>
+                        </svg>
+                    </span>
+                </div>
+                <p>Producto a vender</p>
+                <a href="#">Añadir</a>
+            </div>
+         </section> -->
+
+         <section class="section__MasVendidos">
+            <div class="div__cards card estilo-b">
+                
+                            
+                    <div class="img-container">
+                      <img src="./assets/images/SERUM_ANTI_EDAD.jpeg" alt="Serum">
+                      <span class="favorite">
+                        <img src="./assets/images/corazon-favorito.webp" alt="favoritos">
+                      </span>
+                      <span class="pric"><p>Promocion de $150</p></span>
+                    </div>
+                  
+                    <p>Serum</p>
+                    <a href="#">Añadir a carrito</a>
+                
+            </div>
+            <div class="div__cards card estilo-b">
+                <div class="img-container">
+                    <img src="./assets/images/SERUM_ANTI_OXIDANTE.jpeg" alt="Serum">
+                    <span class="favorite">
+                      <img src="./assets/images/corazon-favorito.webp" alt="favoritos">
+                    </span>
+                    <span class="pric"><p>Promocion de $150</p></span>
+                  </div>
+                
+                  <p>Serum</p>
+                  <a href="#">Añadir a carrito</a>
+            </div>
+            <div class="div__cards card estilo-b">
+                <div class="img-container">
+                    <img src="./assets/images/TONICO_REAFIRMANTE.jpeg" alt="Serum">
+                    <span class="favorite">
+                      <img src="./assets/images/corazon-favorito.webp" alt="favoritos">
+                    </span>
+                    <span class="pric"><p>Promocion de $150</p></span>
+                  </div>
+                
+                  <p>Serum</p>
+                  <a href="#">Añadir a carrito</a>
+            </div>
+            <div class="div__cards card estilo-b">
+                <div class="img-container">
+                    <img src="./assets/images/CREMA_FACIAL_HUMECTANTE.jpeg" alt="Serum">
+                    <span class="favorite">
+                      <img src="./assets/images/corazon-favorito.webp" alt="favoritos">
+                    </span>
+                    <span class="pric"><p>Promocion de $150</p></span>
+                  </div>
+                
+                  <p>Serum</p>
+                  <a href="#">Añadir a carrito</a>
+            </div>
+         </section>
+    
+    </main>
+    <footer>
+        <p>
+            COPYRIGHT
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1184 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* VARIABLES */
+:root {
+    /* Pallete */
+    --primary: #FFFFFF;
+    --secondary: #999998;
+    
+    /* Font Family */
+    --text-base: 'Bebas Neue', cursive;
+    --text-link: 'Montserrat', sans-serif;
+
+    /* Font Sizes */
+    --txt-xl:72px;
+    --txt-lg:32px;
+    --txt-md:20px;
+    --txt-sm:16px;
+    --txt-xs: 14px;
+
+    /* Font Color */
+    --text-cover: #919191;
+
+
+}
+
+/* Normalize */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--text-base);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 
+    "Ayuda Logo Icons"
+    "Ayuda Logo Nombres";
+    -ms-grid-rows: 5rem 5rem;
+    grid-template-rows: 5rem 5rem;
+    -ms-grid-columns: 30% 40% 30%;
+    grid-template-columns: 30% 40% 30%;
+}
+
+
+.header__navIcons {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: Icons;
+}
+
+.header__navNombreImgIcons {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: Nombres;
+}
+
+.header__aImg {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: Logo;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__navAyuda {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: Ayuda;
+}
+
+.header__liNombreImgIcons:hover {
+    color: #919191;
+}
+
+.header__sourceImg {
+    width: 12rem;
+    height: 10rem;
+}
+
+.header__ulIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+}
+
+.header__imgIcons {
+    width: 2.2rem;
+    height: 2.0rem;
+}
+
+.header__ulNombreImgIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 1.5rem;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.header__ulAyuda {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10.5rem;
+    font-size: 1.4rem;
+}
+
+.header__divPromociones {
+    background-color: #CAD2C5;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    transition: all 5s;
+    height: 2.0rem;
+}
+
+.header__aPromociones {
+    padding: 0.5rem 0 0.5em 10em;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 33.3%;
+}
+
+.estilo-b {
+    text-align: center;
+}
+
+.estilo-b .img-container {
+    overflow: hidden;
+    height: auto;
+    position: relative;
+}
+
+.estilo-b .img-container img{
+    width: 100%;
+}
+
+.estilo-b .img-container .price {
+    position: absolute;
+    top: 1em;
+    left: 0;
+    font-size: 1.1em;
+    background-color: black;
+    padding: 0.5em;
+    color: white;
+}
+
+.estilo-b .img-container .favorite {
+    position: absolute;
+    bottom: 3em;
+    right: 2em;
+    font-size: 1em;
+    background: white;
+    padding: 1.5em;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    cursor: pointer;
+}
+
+.estilo-b .img-container .favorite svg {
+    transform: translate(-0.3rem);
+    width: 1.8em;
+    height: 1.8em;
+}
+
+.estilo-b .img-container .favorite:hover {
+    background: red;
+}
+
+.estilo-b .img-container .favorite:hover svg {
+    fill: black;
+}
+
+.estilo-b a{
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 1rem;
+}
+
+.estilo-b a:hover{
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    border: 0.5rem solid black;
+}
+
+@media (max-width: 580px) {
+    .header {
+        display: -ms-grid;
+        display: grid;
+            grid-template-areas: 
+        "Logo Icons"
+        "Logo Nombres";
+        -ms-grid-rows: 1.5rem 6rem;
+        grid-template-rows: 1.5rem 6rem;
+        -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    }
+
+    .header__aImg {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        -ms-grid-column: 2;
+        grid-area: Logo;
+    }
+
+    .header__navIcons {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+        grid-area: Icons;
+    }
+    
+    .header__navNombreImgIcons {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+        grid-area: Nombres;
+    }
+    
+    @media (max-width: 580px){
+    .header__aImg {
+            -ms-grid-row: 1;
+            -ms-grid-row-span: 2;
+            -ms-grid-column: 1;
+    }
+    .header__navIcons {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+    }
+    .header__navNombreImgIcons {
+            -ms-grid-row: 2;
+            -ms-grid-column: 2;
+    }
+
+
+    }
+
+    .header__ulAyuda{
+        display: none;
+    }
+
+    .header__ulNombreImgIcons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 1.0rem;
+        font-size: 1.0rem;
+        color: black;
+    }
+    
+    .header__imgIcons {
+        width: 2.2rem;
+        height: 2.0rem;
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        width: 33.3%;
+    }
+    
+    .estilo-b {
+        text-align: center;
+    }
+    
+    .estilo-b .img-container {
+        overflow: hidden;
+        height: auto;
+        position: relative;
+    }
+    
+    .estilo-b .img-container img{
+        width: 100%;
+    }
+    
+    .estilo-b .img-container .price {
+        position: absolute;
+        top: 0.5em;
+        left: 0;
+        font-size: 0.9em;
+        background-color: black;
+        padding: 0.5em;
+        color: white;
+    }
+    
+    .estilo-b .img-container .favorite {
+        position: absolute;
+        bottom: 1em;
+        right: 0.5em;
+        font-size: 0.7em;
+        background: white;
+        padding: 1.5em;
+        border-radius: 50%;
+        height: 4em;
+        width: 4em;
+        cursor: pointer;
+    }
+    
+    .estilo-b .img-container .favorite svg {
+        transform: translate(-0.32rem);
+        width: 1.8em;
+        height: 1.8em;
+    }
+    
+    .estilo-b .img-container .favorite:hover {
+        background: red;
+    }
+    
+    .estilo-b .img-container .favorite:hover svg {
+        fill: black;
+    }
+    
+    .estilo-b a{
+        display: inline-block;
+        margin-top: 0.5rem;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 1rem;
+        font-size: 1em;
+        width: auto;
+        height: auto;
+    }
+    
+    .estilo-b a:hover{
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+        border: 0.2rem solid black;
+    }
+    .header__navIcons {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+    .header__navNombreImgIcons {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+    .header__aImg {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        -ms-grid-column: 1;
+    }
+    
+}
+
+/* Acaba RESPONSIVE__HEADER */
+
+/* Empieza la sección MAIN ENLACES*/
+
+.main__sectionCarrusel{
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 2px;
+    height: 40rem;
+    text-align: center;
+}
+
+body .main__li:hover {
+    color: #919191;
+}
+
+
+.main__sectionBotones {
+
+    height: 9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.main__divButtonsMasVendidos {
+    background-color: crimson;
+    height: 8vh;
+    width: 25vw;
+    margin-right: -25vw;
+    text-align: center;
+    padding: 1.5vh;
+    background-color: #CAD2C5;
+    border-radius: 2px;
+    border-color: black;
+    border-style: ridge;
+}
+
+.main__divButtonsNotificaciones {
+    background-color: aqua;
+    height: 8vh;
+    width: 25vw;
+    text-align: center;
+    padding: 1.5vh;
+    background-color: #CAD2C5;
+    border-radius: 2px;
+    border-color: black;
+    border-style: ridge;
+}
+
+
+/* .main__sectionCarruselImg {
+    height: 30rem;
+    width: 20rem;
+} */
+
+.main__nav {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 
+    "Enlaces Buscador Lupa";
+    -ms-grid-columns: 80% 15% 5%;
+    grid-template-columns: 80% 15% 5%;
+}
+
+.main__ul {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+    grid-area: Enlaces;
+    font-size: x-large;
+}
+
+.main__buscador {
+
+    -ms-grid-row: 1;
+
+    -ms-grid-column: 2;
+
+    height: 7vh;
+    width: 15vw;
+    background-color: #CAD2C5;
+    grid-area: Buscador;
+    font-size: 1rem;
+    color: #FFFFFF;
+    outline: none;
+    border: 0.2vw solid white;
+    border-radius: 30px;
+    padding: 2vh;
+
+}
+
+.main__img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    grid-area: Lupa;
+}
+
+.main__divBuscador {
+    display: flex;
+    
+    align-items: center;
+    flex-direction: row;
+}
+
+.main__divImgBuscador {
+    display: flex;
+
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Termina Seccion de nav y carrusel */
+
+.main__sectionProductos {
+    /* background-color: chocolate; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 30rem;
+}
+
+.main__divSectionProductos {
+    /* background-color: #919191; */
+    border-color: black;
+    border-style: double;
+    width: 15rem;
+    height: 30rem;
+}
+
+.main__divSectionProductosImg {
+    /* background-color: aqua; */
+    height: 15rem;
+    align-content: center;
+}
+
+.main__imgSectionProductos {
+    width: 12rem;
+    height: 15rem;
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 0px 0px 0px 15px;
+}
+
+.main__divSectionProductosTxt {
+    /* background-color: blue; */
+    height: 10rem;
+    text-align: center;
+}
+
+.main__divSectionProductosBtn {
+    /* background-color: cornflowerblue; */
+    height: 4.5rem;
+    text-align: center;
+}
+
+.section__MasVendidos {
+    /* background-color: blue; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    gap: 2em;
+}
+
+.div__cards {
+    /* background-color: darkcyan; */
+    width: 33.3%;
+    height: auto;
+}
+
+.estilo-b .img-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.estilo-b .img-container img {
+    width: 100%;
+}
+
+
+.estilo-b .img-container .favorite img {
+    width: 100%;
+}
+
+.estilo-b .img-container .pric {
+    position: absolute;
+    top: 1em;
+    left: 0em;
+    font-size: 1.2em;
+    background: white;
+    padding: 0.2em;
+    height: 1.6em;
+    width: 7em;
+}
+
+.estilo-b .img-container .favorite {
+    position: absolute;
+    top: auto;
+    right: 5em;
+    font-size: 0.3em;
+    background: white;
+    padding: 2em;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.estilo-b .img-container .favorite:hover {
+    background: red;
+}
+
+.estilo-b .img-container .favorite:hover img {
+    fill: white;
+}
+
+.estilo-b a{
+    text-align: center;
+    display: block;
+    margin-top: 0.4em;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 0.2em;
+    border: 0.2em solid black;
+    font-size: 1.4em;
+}
+
+.estilo-b a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    border: 0.2em solid black;
+}
+
+
+
+@media (max-width: 1000px) {
+    .main__nav {
+        display: -ms-grid;
+        display: grid;
+            grid-template-areas: 
+        "Enlaces Lupa";
+        -ms-grid-columns: 80% 20%;
+        grid-template-columns: 80% 20%;
+    }
+
+    .main__ul {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 8rem;
+        grid-area: Enlaces;
+        font-size: x-large;
+    }
+
+
+    .main__img {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .main__divImgBuscador {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+        grid-area: Lupa;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    .main__buscador {
+        display: none;
+    }
+
+    .main__sectionProductos {
+        justify-content: space-around;
+        height: 36rem;
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        width: 33%;
+    }
+    
+    .estilo-b {
+        text-align: center;
+    }
+    
+    .estilo-b .img-container {
+        overflow: hidden;
+        height: auto;
+        position: relative;
+    }
+    
+    .estilo-b .img-container img{
+        width: 100%;
+    }
+    
+    .estilo-b .img-container .price {
+        position: absolute;
+        top: 0.5em;
+        left: 0;
+        font-size: 0.9em;
+        background-color: black;
+        padding: 0.5em;
+        color: white;
+    }
+    
+    .estilo-b .img-container .favorite {
+        position: absolute;
+        bottom: 1em;
+        right: 0.5em;
+        font-size: 0.7em;
+        background: white;
+        padding: 1.5em;
+        border-radius: 50%;
+        height: 4em;
+        width: 4em;
+        cursor: pointer;
+    }
+    
+    .estilo-b .img-container .favorite svg {
+        transform: translate(-0.32rem);
+        width: 1.8em;
+        height: 1.8em;
+    }
+    
+    .estilo-b .img-container .favorite:hover {
+        background: red;
+    }
+    
+    .estilo-b .img-container .favorite:hover svg {
+        fill: black;
+    }
+    
+    .estilo-b a{
+        display: inline-block;
+        margin-top: 0.5rem;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 1rem;
+        font-size: 1em;
+        width: auto;
+        height: auto;
+    }
+    
+    .estilo-b a:hover{
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+        border: 0.2rem solid black;
+    }
+    .main__ul {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    .main__img {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+}
+
+@media (max-width: 580px) {
+    .main__nav {
+        display: -ms-grid;
+        display: grid;
+            grid-template-areas: 
+        "Enlaces Lupa";
+        -ms-grid-columns: 80% 20%;
+        grid-template-columns: 80% 20%;
+        
+    }
+
+    .main__ul {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 8rem;
+        grid-area: Enlaces;
+        font-size: medium;
+    }
+
+    .main__img {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main__divImgBuscador {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+        grid-area: Lupa;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main__buscador {
+        display: none;
+    }
+
+    .main__sectionBotones {
+        width: 100vw;
+        height: 12vh;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    
+    }
+    
+    .main__divButtonsMasVendidos {
+        background-color: crimson;
+        height: 5vh;
+        width: 25vw;
+        margin-right: -25vw;
+        text-align: center;
+        padding: 1.5vh;
+        background-color: #CAD2C5;
+        border-radius: 2px;
+        border-color: black;
+        border-style: ridge;
+    }
+    
+    .main__divButtonsNotificaciones {
+        background-color: aqua;
+        height: 5vh;
+        width: 25vw;
+        text-align: center;
+        padding: 1.5vh;
+        background-color: #CAD2C5;
+        border-radius: 2px;
+        border-color: black;
+        border-style: ridge;
+    }
+
+    .main__sectionProductos {
+        justify-content: space-around;
+        height: 66rem;
+    }
+    .main__ul {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        
+    }
+    .main__img {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        
+    }
+    .main__ul {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        
+    }
+    .main__divImgBuscador {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        
+    }
+
+}
+
+@media (max-width: 320px) {
+    .main__nav {
+        display: -ms-grid;
+        display: grid;
+            grid-template-areas: 
+        "Enlaces Lupa";
+        -ms-grid-columns: 80% 20%;
+        grid-template-columns: 80% 20%;
+        
+    }
+
+    .main__ul {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 8rem;
+        grid-area: Enlaces;
+        font-size: medium;
+    }
+
+    .main__img {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main__divImgBuscador {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+        grid-area: Lupa;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    @media (max-width: 1000px){
+    .main__ul {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+    }
+    .main__divImgBuscador {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+    }
+    .main__ul {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+    }
+    .main__divImgBuscador {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+    }
+    .main__ul {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+    }
+    .main__divImgBuscador {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+    }
+
+
+    }
+
+    @media (max-width: 580px){
+    .main__ul {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+        
+    }
+    .main__divImgBuscador {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+        
+    }
+    .main__ul {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+        
+    }
+    .main__divImgBuscador {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+        
+    }
+
+
+    }
+
+    @media (max-width: 320px){
+    .main__ul {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+        
+    }
+    .main__divImgBuscador {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+        
+    }
+
+
+    }
+
+    .main__buscador {
+        display: none;
+    }
+
+    .main__sectionBotones {
+        width: 100vw;
+        height: 12vh;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    
+    }
+    
+    .main__divButtonsMasVendidos {
+        background-color: crimson;
+        height: 5vh;
+        width: 25vw;
+        margin-right: -25vw;
+        text-align: center;
+        padding: 1.5vh;
+        background-color: #CAD2C5;
+        border-radius: 2px;
+        border-color: black;
+        border-style: ridge;
+    }
+    
+    .main__divButtonsNotificaciones {
+        background-color: aqua;
+        height: 5vh;
+        width: 25vw;
+        text-align: center;
+        padding: 1.5vh;
+        background-color: #CAD2C5;
+        border-radius: 2px;
+        border-color: black;
+        border-style: ridge;
+    }
+
+    .main__sectionProductos {
+        justify-content: space-around;
+        height: 66rem;
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        width: 33%;
+    }
+    
+    .estilo-b {
+        text-align: center;
+    }
+    
+    .estilo-b .img-container {
+        overflow: hidden;
+        height: auto;
+        position: relative;
+    }
+    
+    .estilo-b .img-container img{
+        width: 100%;
+    }
+    
+    .estilo-b .img-container .price {
+        position: absolute;
+        top: 0.5em;
+        left: 0;
+        font-size: 0.9em;
+        background-color: black;
+        padding: 0.5em;
+        color: white;
+    }
+    
+    .estilo-b .img-container .favorite {
+        position: absolute;
+        bottom: 1em;
+        right: 0.5em;
+        font-size: 0.7em;
+        background: white;
+        padding: 1.5em;
+        border-radius: 50%;
+        height: 4em;
+        width: 4em;
+        cursor: pointer;
+    }
+    
+    .estilo-b .img-container .favorite svg {
+        transform: translate(-0.32rem);
+        width: 1.8em;
+        height: 1.8em;
+    }
+    
+    .estilo-b .img-container .favorite:hover {
+        background: red;
+    }
+    
+    .estilo-b .img-container .favorite:hover svg {
+        fill: black;
+    }
+    
+    .estilo-b a{
+        display: inline-block;
+        margin-top: 0.5rem;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 1rem;
+        font-size: 1em;
+        width: auto;
+        height: auto;
+    }
+    
+    .estilo-b a:hover{
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+        border: 0.2rem solid black;
+    }
+
+    .estilo-b .img-container .pric {
+        position: absolute;
+        top: 1em;
+        left: 0em;
+        font-size: 0.6em;
+        background: white;
+        padding: 0.2em;
+        height: 1.6em;
+        width: 7em;
+    }
+
+    .estilo-b .img-container .favorite {
+        position: absolute;
+        top: auto;
+        right: 1em;
+        font-size: 0.3em;
+        background: white;
+        padding: 2em;
+        height: 7em;
+        width: 7em;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .main__ul {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        
+    }
+    .main__img {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        
+    }
+    .main__ul {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        
+    }
+    .main__divImgBuscador {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        
+    }
+    .main__ul {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        
+    }
+    .main__divImgBuscador {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        
+    }
+
+}

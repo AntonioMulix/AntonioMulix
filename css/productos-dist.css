@@ -1,0 +1,945 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* VARIABLES */
+:root {
+    /* Pallete */
+    --primary: #FFFFFF;
+    --secondary: #999998;
+    
+    /* Font Family */
+    --text-base: 'Bebas Neue', cursive;
+    --text-link: 'Montserrat', sans-serif;
+
+    /* Font Sizes */
+    --txt-xl:72px;
+    --txt-lg:32px;
+    --txt-md:20px;
+    --txt-sm:16px;
+    --txt-xs: 14px;
+
+    /* Font Color */
+    --text-cover: #919191;
+
+
+}
+
+/* Normalize */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--text-base);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 
+    "Ayuda Logo Icons"
+    "Ayuda Logo Nombres";
+    -ms-grid-rows: 5rem 5rem;
+    grid-template-rows: 5rem 5rem;
+    -ms-grid-columns: 30% 40% 30%;
+    grid-template-columns: 30% 40% 30%;
+}
+
+
+.header__navIcons {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: Icons;
+}
+
+.header__navNombreImgIcons {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: Nombres;
+}
+
+.header__aImg {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: Logo;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__navAyuda {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: Ayuda;
+}
+
+.header__liNombreImgIcons:hover {
+    color: #919191;
+}
+
+.header__sourceImg {
+    width: 12rem;
+    height: 10rem;
+}
+
+.header__ulIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+}
+
+.header__imgIcons {
+    width: 2.2rem;
+    height: 2.0rem;
+}
+
+.header__ulNombreImgIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 1.5rem;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.header__ulAyuda {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10.5rem;
+    font-size: 1.4rem;
+}
+
+.header__divPromociones {
+    background-color: #CAD2C5;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    transition: all 5s;
+    height: 2.0rem;
+}
+
+.header__aPromociones {
+    padding: 0.5rem 0 0.5rem 10rem;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.main__nav {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: 
+    "Enlaces Buscador Lupa";
+    -ms-grid-columns: 80% 15% 5%;
+    grid-template-columns: 80% 15% 5%;
+}
+
+.main__ul {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+    grid-area: Enlaces;
+    font-size: x-large;
+}
+
+.main__buscador {
+
+    -ms-grid-row: 1;
+
+    -ms-grid-column: 2;
+
+    height: 7vh;
+    width: 15vw;
+    background-color: #CAD2C5;
+    grid-area: Buscador;
+    font-size: 1rem;
+    color: #FFFFFF;
+    outline: none;
+    border: 0.2vw solid white;
+    border-radius: 30px;
+    padding: 2vh;
+
+}
+
+.main__img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    grid-area: Lupa;
+}
+
+.main__divBuscador {
+    display: flex;
+    
+    align-items: center;
+    flex-direction: row;
+}
+
+.main__divImgBuscador {
+    display: flex;
+
+    align-items: center;
+    flex-direction: row;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+
+.card {
+    width: 100%;
+}
+
+.estilo-a {
+    font-family: sans-serif;
+}
+
+.estilo-a .img-container {
+    width: 100%;
+}
+
+/* Flex del main */
+.main__MainContainer {
+    /* background-color: aqua; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 3em 0em 0em 0em;
+}
+
+.main__MainContainer:hover {
+    /* background-color: aqua; */
+    border: 0.1em solid black;
+}
+
+.main__MainContainerDos:hover {
+    /* background-color: aqua; */
+    border: 0.1em solid black;
+}
+
+.main__MainContainerDos {
+    /* background-color: aqua; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 1em 0em 0em 0em;
+}
+
+.estilo-b .img-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.estilo-b .img-container img {
+    width: 100%;
+}
+
+
+.estilo-b .img-container .favorite img {
+    width: 100%;
+}
+
+.estilo-b .img-container .pric {
+    position: absolute;
+    top: 1em;
+    left: 0em;
+    font-size: 1.2em;
+    background: white;
+    padding: 0.2em;
+    height: 1.6em;
+    width: 7em;
+}
+
+.estilo-b .img-container .favorite {
+    position: absolute;
+    top: 5em;
+    right: 5em;
+    font-size: 0.3em;
+    background: white;
+    padding: 2em;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.estilo-b .img-container .favorite:hover {
+    background: red;
+}
+
+.estilo-b .img-container .favorite:hover img {
+    fill: white;
+}
+
+.estilo-b a{
+    text-align: center;
+    display: block;
+    margin-top: 0.4em;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 0.2em;
+    border: 0.2em solid black;
+    font-size: 1.4em;
+}
+
+.estilo-b a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    border: 0.2em solid black;
+}
+
+.txt__Product {
+    font-size: large;
+}
+
+.card__Txt {
+    text-align: center;
+}
+
+/* Flex del div para toda la movilidad de las cartas */
+.div__flex1 {
+    /* background-color: brown; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Flex de lado izquierdo */
+.cards__flex {
+    /* background-color: blue; */
+    height: auto;
+    width: 15em;
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+.cards__Pro {
+    /* background-color: greenyellow; */
+    width: 100%;
+    height: auto;
+    flex-grow: 0;
+}
+
+.divImg__Producto {
+    flex-grow: 6;
+}
+
+.Desc__Producto {
+    flex-grow: 0;
+}
+
+.Desc__Producto img {
+    width: 100%;
+}
+
+/* .Precio__Producto {
+    flex-grow: 0;
+    flex-basis: 10%;
+} */
+
+.card2 {
+    flex-grow: 5;
+    flex-shrink: 0;
+    flex-basis: 60%;
+}
+
+.card__Txt {
+    flex-grow: 3;
+    width: 60%;
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+.card__divVideo {
+    height: 10em;
+    flex-grow: 3;
+    width: 80%;
+    margin: 0em 0em 0em 0em;
+}
+
+.video__Producto {
+    position: relative;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    height: 27em;
+    overflow: hidden;
+}
+
+.videito {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 1000px) {
+    .header {
+        display: -ms-grid;
+        display: grid;
+            grid-template-areas: 
+        "Logo Icons"
+        "Logo Nombres";
+        -ms-grid-rows: 1.5rem 6rem;
+        grid-template-rows: 1.5rem 6rem;
+        -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    }
+
+    .header__aImg {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        -ms-grid-column: 2;
+        grid-area: Logo;
+    }
+
+    .header__navIcons {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+        grid-area: Icons;
+    }
+    
+    .header__navNombreImgIcons {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+        grid-area: Nombres;
+    }
+
+    .header__ulAyuda{
+        display: none;
+    }
+
+    .header__ulNombreImgIcons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 1.0rem;
+        font-size: 1.0rem;
+        color: black;
+    }
+    
+    .header__imgIcons {
+        width: 2.2rem;
+        height: 2.0rem;
+    }
+
+    .main__nav {
+        display: -ms-grid;
+        display: grid;
+            grid-template-areas: 
+        "Enlaces Lupa";
+        -ms-grid-columns: 80% 20%;
+        grid-template-columns: 80% 20%;
+        
+    }
+
+    .main__ul {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 8rem;
+        grid-area: Enlaces;
+        font-size: medium;
+    }
+
+    .main__img {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main__divImgBuscador {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+        grid-area: Lupa;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main__buscador {
+        display: none;
+    }
+
+    .main__productos {
+        display: -ms-grid;
+        display: grid;
+            grid-template-areas: 
+        "card video";
+        -ms-grid-rows: 40rem;
+        grid-template-rows: 40rem;
+        -ms-grid-columns: 30% 70%;
+        grid-template-columns: 30% 70%;
+    }
+
+    .tarjeta__card {
+        grid-area: card;
+
+    }
+    
+    .text__product {
+        display: none;
+
+    }
+    
+    .video__product {
+        grid-area: video;
+        position: relative;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        height: auto;
+        overflow: hidden;
+    }
+    
+    .video__product iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 95%;
+        height: 70%;
+    }
+    .header__navIcons {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+    .header__navNombreImgIcons {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+    .header__aImg {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        -ms-grid-column: 1;
+    }
+
+    .main__ul {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        
+    }
+
+    .main__img {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        
+    }
+    
+}
+
+@media (max-width: 620px) {
+    .header {
+        display: -ms-grid;
+        display: grid;
+            grid-template-areas: 
+        "Logo Icons"
+        "Logo Nombres";
+        -ms-grid-rows: 1.5rem 6rem;
+        grid-template-rows: 1.5rem 6rem;
+        -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    }
+
+    .header__aImg {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        -ms-grid-column: 2;
+        grid-area: Logo;
+    }
+
+    .header__navIcons {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+        grid-area: Icons;
+    }
+    
+    .header__navNombreImgIcons {
+        -ms-grid-row: 2;
+        -ms-grid-column: 3;
+        grid-area: Nombres;
+    }
+    
+    @media (max-width: 1000px){
+    .header__aImg {
+            -ms-grid-row: 1;
+            -ms-grid-row-span: 2;
+            -ms-grid-column: 1;
+    }
+    .header__navIcons {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+    }
+    .header__navNombreImgIcons {
+            -ms-grid-row: 2;
+            -ms-grid-column: 2;
+    }
+    .header__aImg {
+            -ms-grid-row: 1;
+            -ms-grid-row-span: 2;
+            -ms-grid-column: 1;
+    }
+    .header__navIcons {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+    }
+    .header__navNombreImgIcons {
+            -ms-grid-row: 2;
+            -ms-grid-column: 2;
+    }
+
+
+    }
+    
+    @media (max-width: 620px){
+    .header__aImg {
+            -ms-grid-row: 1;
+            -ms-grid-row-span: 2;
+            -ms-grid-column: 1;
+    }
+    .header__navIcons {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+    }
+    .header__navNombreImgIcons {
+            -ms-grid-row: 2;
+            -ms-grid-column: 2;
+    }
+
+
+    }
+
+    .header__ulAyuda{
+        display: none;
+    }
+
+    .header__ulNombreImgIcons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 1.0rem;
+        font-size: 1.0rem;
+        color: black;
+    }
+    
+    .header__imgIcons {
+        width: 2.2rem;
+        height: 2.0rem;
+    }
+
+    .main__nav {
+        display: -ms-grid;
+        display: grid;
+            grid-template-areas: 
+        "Enlaces Lupa";
+        -ms-grid-columns: 80% 20%;
+        grid-template-columns: 80% 20%;
+        
+    }
+
+    .main__ul {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 8rem;
+        grid-area: Enlaces;
+        font-size: medium;
+    }
+
+    .main__img {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main__divImgBuscador {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+        grid-area: Lupa;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    @media (max-width: 1000px){
+
+    .main__ul {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+        
+    }
+
+    .main__divImgBuscador {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+        
+    }
+
+    .main__ul {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+        
+    }
+
+    .main__divImgBuscador {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+        
+    }
+
+
+    }
+
+    @media (max-width: 620px){
+
+    .main__ul {
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+        
+    }
+
+    .main__divImgBuscador {
+            -ms-grid-row: 1;
+            -ms-grid-column: 2;
+        
+    }
+
+
+    }
+
+    .main__buscador {
+        display: none;
+    }
+
+    .main__productos {
+        display: -ms-grid;
+        display: grid;
+            grid-template-areas: 
+        "card"
+        "video";
+        -ms-grid-rows: 20rem 20rem;
+        grid-template-rows: 20rem 20rem;
+        -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    }
+
+    .tarjeta__card {
+        grid-area: card;
+        
+
+    }
+    
+    .text__product {
+        display: none;
+
+    }
+    
+    .video__product {
+        grid-area: video;
+        position: relative;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        height: auto;
+        overflow: hidden;
+    }
+    
+    .video__product iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 95%;
+        height: 50%;
+    }
+    .header__navIcons {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+    .header__navNombreImgIcons {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+    .header__aImg {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        -ms-grid-column: 1;
+    }
+
+    .main__ul {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        
+    }
+
+    .main__img {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        
+    }
+    .header__aImg {
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        -ms-grid-column: 1;
+    }
+    .header__navIcons {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+    .header__navNombreImgIcons {
+        -ms-grid-row: 2;
+        -ms-grid-column: 2;
+    }
+
+    .main__ul {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        
+    }
+
+    .main__divImgBuscador {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+        
+    }
+
+    .tarjeta__card {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .video__product {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+    
+}
+
+@media (max-width: 1000px){
+
+    .tarjeta__card {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .video__product {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+    .tarjeta__card {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .video__product {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }
+
+
+}
+
+@media (max-width: 620px){
+
+    .tarjeta__card {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .video__product {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+    }
+
+
+}
+
+@media (max-width: 320px) {
+
+    .card__divVideo {
+        height: 10em;
+        flex-grow: 3;
+        width: 90%;
+        margin: 0em 0em 0em 0em;
+    }
+
+    .video__Producto {
+        position: relative;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        height: 20em;
+        overflow: hidden;
+    }
+    
+    .videito {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
