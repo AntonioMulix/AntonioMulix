@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+/*NORMALIZE*/
+@import './misc/normailize';
+
+/*HEADER*/
+@import './partials/header';
+.header__divPromociones {
+    background-color: #CAD2C5;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    transition: all 5s;
+    height: 2.0rem;
+    .header__aPromociones {
+        padding: 0.5rem 0 0.5em 10em;
+        text-decoration: underline;
+        font-size: 1.2rem;
+    }
+}
+
+.main__nav {
+    display: grid;
+    grid-template-areas: 
+    "Enlaces Buscador Lupa";
+    grid-template-columns: 80% 15% 5%;
+    .main__ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 8rem;
+        grid-area: Enlaces;
+        font-size: medium;
+        .main__li:hover {
+            color: #919191;
+        }
+    }
+    .main__divBuscador {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        .main__buscador {
+    
+            height: 7vh;
+            width: 15vw;
+            background-color: #CAD2C5;
+            grid-area: Buscador;
+            font-size: 1rem;
+            color: #FFFFFF;
+            outline: none;
+            border: 0.2vw solid white;
+            border-radius: 30px;
+            padding: 2vh;
+        
+        }
+    }
+    .main__divImgBuscador {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        .main__img {
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            flex-direction: row;
+            grid-area: Lupa;
+        }
+    }
+}
+
+.main__sectionBotones {
+
+    height: 9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    .main__divButtonsMasVendidos {
+        background-color: crimson;
+        height: 8vh;
+        width: 25vw;
+        margin-right: -25vw;
+        text-align: center;
+        padding: 1.5vh;
+        background-color: #CAD2C5;
+        border-radius: 2px;
+        border-color: black;
+        border-style: ridge;
+    }
+    .main__divButtonsNotificaciones {
+        background-color: aqua;
+        height: 8vh;
+        width: 25vw;
+        text-align: center;
+        padding: 1.5vh;
+        background-color: #CAD2C5;
+        border-radius: 2px;
+        border-color: black;
+        border-style: ridge;
+    }
+}
+
+.section__MasVendidos {
+    /* background-color: blue; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    gap: 2em;
+    .div__cards {
+        /* background-color: darkcyan; */
+        width: 33.3%;
+        height: auto;
+        
+    }
+    .estilo-b a{
+        text-align: center;
+        display: block;
+        margin-top: 0.4em;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 0.2em;
+        border: 0.2em solid black;
+        font-size: 1.4em;
+    }
+    
+    .estilo-b a:hover {
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+        border: 0.2em solid black;
+    }
+    .estilo-b .img-container {
+        overflow: hidden;
+        position: relative;
+        .estilo-b .img-container img {
+            width: 100%;
+        }
+    }
+    .estilo-b .img-container .pric {
+        position: absolute;
+        top: 1em;
+        left: 0em;
+        font-size: 1.2em;
+        background: white;
+        padding: 0.2em;
+        height: 1.6em;
+        width: auto;
+    }
+    .estilo-b .img-container .favorite {
+        position: absolute;
+        top: auto;
+        right: 5em;
+        font-size: 0.3em;
+        background: white;
+        padding: 2em;
+        height: 10em;
+        width: 10em;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .estilo-b .img-container .favorite img {
+        width: 100%;
+    }
+    .estilo-b .img-container .favorite:hover {
+        background: red;
+    }
+}
+
+
+
+@media (max-width: 580px) {
+    .header {
+        display: grid;
+        grid-template-areas: 
+        "Logo Icons"
+        "Logo Nombres";
+        grid-template-rows: 1.5rem 6rem;
+        grid-template-columns: 50% 50%;
+    }
+
+    .header__aImg {
+        grid-area: Logo;
+    }
+
+    .header__navIcons {
+        grid-area: Icons;
+    }
+    
+    .header__navNombreImgIcons {
+        grid-area: Nombres;
+    }
+
+    .header__navAyuda{
+        display: none;
+    }
+
+    .header__ulNombreImgIcons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 1.0rem;
+        font-size: 1.0rem;
+        color: black;
+    }
+    
+    .header__imgIcons {
+        width: 2.2rem;
+        height: 2.0rem;
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        width: 33.3%;
+    }
+    
+    .estilo-b {
+        text-align: center;
+    }
+    
+    .estilo-b .img-container {
+        overflow: hidden;
+        height: auto;
+        position: relative;
+    }
+    
+    .estilo-b .img-container img{
+        width: 100%;
+    }
+    
+    .estilo-b .img-container .price {
+        position: absolute;
+        top: 0.5em;
+        left: 0;
+        font-size: 0.9em;
+        background-color: black;
+        padding: 0.5em;
+        color: white;
+    }
+    
+    .estilo-b .img-container .favorite {
+        position: absolute;
+        bottom: 1em;
+        right: 0.5em;
+        font-size: 0.7em;
+        background: white;
+        padding: 1.5em;
+        border-radius: 50%;
+        height: 4em;
+        width: 4em;
+        cursor: pointer;
+    }
+    
+    .estilo-b .img-container .favorite svg {
+        transform: translate(-0.32rem);
+        width: 1.8em;
+        height: 1.8em;
+    }
+    
+    .estilo-b .img-container .favorite:hover {
+        background: red;
+    }
+    
+    .estilo-b .img-container .favorite:hover svg {
+        fill: black;
+    }
+    
+    .estilo-b a{
+        display: inline-block;
+        margin-top: 0.5rem;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 1rem;
+        font-size: 1em;
+        width: auto;
+        height: auto;
+    }
+    
+    .estilo-b a:hover{
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+        border: 0.2rem solid black;
+    }
+    
+}
+
+@media (max-width: 1000px) {
+    .main__nav {
+        display: grid;
+        grid-template-areas: 
+        "Enlaces Lupa";
+        grid-template-columns: 80% 20%;
+    }
+
+    .main__ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 8rem;
+        grid-area: Enlaces;
+        font-size: x-large;
+    }
+
+
+    .main__img {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .main__divImgBuscador {
+        grid-area: Lupa;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+    .main__buscador {
+        display: none;
+    }
+
+    .main__sectionProductos {
+        justify-content: space-around;
+        height: 36rem;
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        width: 33%;
+    }
+    
+    .estilo-b {
+        text-align: center;
+    }
+    
+    .estilo-b .img-container {
+        overflow: hidden;
+        height: auto;
+        position: relative;
+    }
+    
+    .estilo-b .img-container img{
+        width: 100%;
+    }
+    
+    .estilo-b .img-container .price {
+        position: absolute;
+        top: 0.5em;
+        left: 0;
+        font-size: 0.9em;
+        background-color: black;
+        padding: 0.5em;
+        color: white;
+    }
+    
+    .estilo-b .img-container .favorite {
+        position: absolute;
+        bottom: 1em;
+        right: 0.5em;
+        font-size: 0.7em;
+        background: white;
+        padding: 1.5em;
+        border-radius: 50%;
+        height: 4em;
+        width: 4em;
+        cursor: pointer;
+    }
+    
+    .estilo-b .img-container .favorite svg {
+        transform: translate(-0.32rem);
+        width: 1.8em;
+        height: 1.8em;
+    }
+    
+    .estilo-b .img-container .favorite:hover {
+        background: red;
+    }
+    
+    .estilo-b .img-container .favorite:hover svg {
+        fill: black;
+    }
+    
+    .estilo-b a{
+        display: inline-block;
+        margin-top: 0.5rem;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 1rem;
+        font-size: 1em;
+        width: auto;
+        height: auto;
+    }
+    
+    .estilo-b a:hover{
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+        border: 0.2rem solid black;
+    }
+
+
+}
+
+@media (max-width: 580px) {
+    .main__nav {
+        display: grid;
+        grid-template-areas: 
+        "Enlaces Lupa";
+        grid-template-columns: 80% 20%;
+        
+    }
+
+    .main__ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 8rem;
+        grid-area: Enlaces;
+        font-size: xx-small;
+    }
+
+    .main__img {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main__divImgBuscador {
+        grid-area: Lupa;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main__buscador {
+        display: none;
+    }
+
+    .main__sectionBotones {
+        width: 100vw;
+        height: 12vh;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    
+    }
+    
+    .main__divButtonsMasVendidos {
+        background-color: crimson;
+        height: 5vh;
+        width: 25vw;
+        margin-right: -25vw;
+        text-align: center;
+        padding: 1.5vh;
+        background-color: #CAD2C5;
+        border-radius: 2px;
+        border-color: black;
+        border-style: ridge;
+    }
+    
+    .main__divButtonsNotificaciones {
+        background-color: aqua;
+        height: 5vh;
+        width: 25vw;
+        text-align: center;
+        padding: 1.5vh;
+        background-color: #CAD2C5;
+        border-radius: 2px;
+        border-color: black;
+        border-style: ridge;
+    }
+
+    .main__sectionProductos {
+        justify-content: space-around;
+        height: 66rem;
+    }
+
+    .header__navAyuda {
+        display: none;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .main__nav {
+        display: grid;
+        grid-template-areas: 
+        "Enlaces Lupa";
+        grid-template-columns: 80% 20%;
+        
+    }
+
+    .main__ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 8rem;
+        grid-area: Enlaces;
+        font-size: 1.2rem;
+    }
+
+    .main__img {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main__divImgBuscador {
+        grid-area: Lupa;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main__buscador {
+        display: none;
+    }
+
+    .main__sectionBotones {
+        width: 100vw;
+        height: 12vh;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    
+    }
+    
+    .main__divButtonsMasVendidos {
+        background-color: crimson;
+        height: 5vh;
+        width: 25vw;
+        margin-right: -25vw;
+        text-align: center;
+        padding: 1.5vh;
+        background-color: #CAD2C5;
+        border-radius: 2px;
+        border-color: black;
+        border-style: ridge;
+    }
+    
+    .main__divButtonsNotificaciones {
+        background-color: aqua;
+        height: 5vh;
+        width: 25vw;
+        text-align: center;
+        padding: 1.5vh;
+        background-color: #CAD2C5;
+        border-radius: 2px;
+        border-color: black;
+        border-style: ridge;
+    }
+
+    .main__sectionProductos {
+        justify-content: space-around;
+        height: 66rem;
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        width: 33%;
+    }
+    
+    .estilo-b {
+        text-align: center;
+    }
+    
+    .estilo-b .img-container {
+        overflow: hidden;
+        height: auto;
+        position: relative;
+    }
+    
+    .estilo-b .img-container img{
+        width: 100%;
+    }
+    
+    .estilo-b .img-container .price {
+        position: absolute;
+        top: 0.5em;
+        left: 0;
+        font-size: 0.9em;
+        background-color: black;
+        padding: 0.5em;
+        color: white;
+    }
+    
+    .estilo-b .img-container .favorite {
+        position: absolute;
+        bottom: 1em;
+        right: 0.5em;
+        font-size: 0.7em;
+        background: white;
+        padding: 1.5em;
+        border-radius: 50%;
+        height: 4em;
+        width: 4em;
+        cursor: pointer;
+    }
+    
+    .estilo-b .img-container .favorite svg {
+        transform: translate(-0.32rem);
+        width: 1.8em;
+        height: 1.8em;
+    }
+    
+    .estilo-b .img-container .favorite:hover {
+        background: red;
+    }
+    
+    .estilo-b .img-container .favorite:hover svg {
+        fill: black;
+    }
+    
+    .estilo-b a{
+        display: inline-block;
+        margin-top: 0.5rem;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 1rem;
+        font-size: 1em;
+        width: auto;
+        height: auto;
+    }
+    
+    .estilo-b a:hover{
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+        border: 0.2rem solid black;
+    }
+
+    .estilo-b .img-container .pric {
+        position: absolute;
+        top: 1em;
+        left: 0em;
+        font-size: 0.6em;
+        background: white;
+        padding: 0.2em;
+        height: 1.6em;
+        width: 7em;
+    }
+
+    .estilo-b .img-container .favorite {
+        position: absolute;
+        top: auto;
+        right: 1em;
+        font-size: 0.3em;
+        background: white;
+        padding: 2em;
+        height: 7em;
+        width: 7em;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .header__navAyuda {
+        display: none;
+    }
+
+    .main__ul {
+        font-size: x-small;
+    }
+
+}

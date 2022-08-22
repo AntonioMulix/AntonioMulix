@@ -1,0 +1,59 @@
+.header {
+    display: grid;
+    grid-template-areas: 
+    "Ayuda Logo Icons"
+    "Ayuda Logo Nombres";
+    grid-template-rows: 5rem 5rem;
+    grid-template-columns: 30% 40% 30%;
+    .header__aImg {
+        grid-area: Logo;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .header__sourceImg {
+            width: 12rem;
+            height: 10rem;
+        }
+    }
+    .header__navIcons {
+        grid-area: Icons;
+        .header__ulIcons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 8rem;
+            .header__imgIcons {
+                width: 2.2rem;
+                height: 2.0rem;
+            }
+        }
+    }
+    .header__navNombreImgIcons {
+        grid-area: Nombres;
+        .header__ulNombreImgIcons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 1.5rem;
+            font-size: 1.2rem;
+            color: black;
+            .header__liNombreImgIcons:hover {
+                color: #919191;
+            }
+        }
+    }
+    .header__navAyuda {
+        grid-area: Ayuda;
+        .header__ulAyuda {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 10.5rem;
+            font-size: 1.4rem;
+        }
+    }
+}
